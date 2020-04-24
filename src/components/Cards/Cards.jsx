@@ -3,9 +3,10 @@ import {Card,CardContent,Typography,Grid} from '@material-ui/core';
 import styles from './Cards.module.css';
 import CountUp from 'react-countup';
 import cx from 'classnames';
+import Loading from './Loading';
 const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}} ) => {
     if (!confirmed){
-        return(<div>Loading...</div>)
+        return(<Loading/>)
     }
     return (
         <div className={styles.container}>
@@ -43,5 +44,6 @@ const Cards = ({data:{confirmed,recovered,deaths,lastUpdate}} ) => {
             </Grid>
             
         </div>
-    )}
+    )
+}
 export default Cards;

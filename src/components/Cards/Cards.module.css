@@ -5,21 +5,24 @@
 .card{
     margin: 0 2% !important;
     transition: all .4s ease-out !important;
+    border-radius: 50% !important;
+    padding: 30px !important;
 }
 .card:hover{
     margin: 0 2% !important;
     transform: scale(1.1);
     box-shadow:12px 10px 5px #f7f0f0, -8px -5px 5px #f7f0f0 !important;
     cursor:pointer;
+    
 }
 .infected{
-    border-bottom: 10px solid rgba(0,0,255,0.5);
+    border: 10px solid rgba(0,0,255,0.5);
 }
 .recovered{
-    border-bottom: 10px solid rgba(0,255,0,0.5);
+    border: 10px solid rgba(0,255,0,0.5);
 }
 .deaths{
-    border-bottom: 10px solid rgba(255,0,0,0.5);
+    border: 10px solid rgba(255,0,0,0.5);
 }
 @media (max-width:770px){
     .card{
